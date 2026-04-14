@@ -1,0 +1,274 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #e6f1f8;
+  color: #2c2c2a;
+  font-family: "Orbitron", sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  min-height: 100vh;
+  height: 100%;
+  margin: 0;
+}
+main {
+  flex: 1;
+}
+.head {
+  padding: 60px;
+  text-align: center;
+  background-color: #185fa5;
+  color: #fff;
+}
+nav {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 0;
+}
+nav a {
+  flex: 1;
+  flex-shrink: 0;
+  text-align: center;
+  padding: 25px 0;
+  background-color: #e6f1f8;
+  color: #0c447c;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #185fa5;
+  transition:
+    background-color 0.5s,
+    color 0.5s;
+}
+nav a:hover {
+  background-color: #185fa5;
+  color: #ffffff;
+}
+nav a.active {
+  background-color: #185fa5;
+  color: #ffffff;
+}
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  background-color: #e6f1f8;
+  gap: 40px;
+}
+.home-text h2 {
+  flex: 1;
+  font-size: 25px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #5891c9;
+  white-space: nowrap;
+}
+.home-text h3 {
+  flex: 1;
+  font-size: 45px;
+  color: #185fa5;
+}
+.home-text p {
+  flex: 1;
+  font-size: 35px;
+}
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+}
+.btn-primary,
+.btn-secondary {
+  background: #185fa5;
+  color: #fff;
+  border: 6px solid #185fa5;
+  padding: 12px 28px;
+  font-size: 14px;
+  width: fit-content;
+  white-space: nowrap;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 10px;
+}
+.btn-primary:hover,
+.btn-secondary:hover {
+  background: #0a3560;
+  border-color: #0a3560;
+  transition:
+    background,
+    border 0.2s;
+}
+.my-courses-header,
+.contact-us-header,
+.Add-course-header {
+  width: 100%;
+  background-color: #185fa5;
+  padding: 16px;
+}
+.my-courses-header h1,
+.contact-us-header h1,
+.Add-course-header h1 {
+  text-align: center;
+  color: #e6f1f8;
+  font-size: 20px;
+}
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 40px 20px;
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  min-width: 0;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 16px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+thead tr {
+  flex: 1;
+  background-color: #185fa5;
+  color: #e6f1f8;
+}
+thead th {
+  font-family: "Orbitron", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  padding: 18px 20px;
+  text-align: center;
+  border: 1px solid #185fa5;
+}
+tbody tr {
+  border-bottom: 1px solid #164461;
+  transition: background 0.15s;
+}
+tbody tr:hover {
+  background: #eef6fd;
+}
+tbody td {
+  font-size: 15px;
+  font-weight: 800;
+  color: #195086;
+  padding: 16px 13px;
+  text-align: center;
+  border-right: 1px solid #d0e8f7;
+  vertical-align: middle;
+}
+
+.Add-course-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  padding: 50px 20px;
+}
+.Add-course-form {
+  background: #ffffff;
+  border-radius: 16px;
+  max-width: 550px;
+  padding: 40px;
+  width: 100%;
+  border: 1px solid #185fa5;
+}
+.form-items {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  color: #185fa5;
+  gap: 20px;
+}
+.form-items label {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.form-items input,
+.form-items textarea {
+  border-radius: 6px;
+  border: 2px solid #185fa5;
+  padding: 16px 12px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #264463;
+  background: #f0f7ff;
+}
+::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+.form-items input:focus,
+.form-items textarea:focus {
+  border: 3px solid #264463;
+}
+.submit-btn {
+  width: 100%;
+  padding: 20px;
+  background: #185fa5;
+  font-size: 20px;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 2px;
+  color: #e6f1f8;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.submit-btn:hover {
+  background: #264463;
+}
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  min-height: 90vh;
+  width: 100%;
+}
+.contact-info {
+  flex: 1;
+  background: #abd6fa;
+  border-radius: 16px;
+  padding: 32px 32px;
+  max-width: 500px;
+  color: #195086;
+  font-size: 15px;
+}
+.contact-section p {
+  font-weight: normal;
+  font-size: 20px;
+}
+.contact-email,
+.contact-phone {
+  background: #185fa5;
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 10px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 470px;
+}
+.contact-email p,
+.contact-phone p {
+  font-weight: bold;
+  font-size: 20px;
+}
+footer {
+  background: #185fa5;
+  color: #e6f1f8;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 20px;
+  width: 100%;
+  bottom: 0;
+}

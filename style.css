@@ -36,7 +36,7 @@ nav a {
   background-color: #e6f1f8;
   color: #0c447c;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   border: 2px solid #185fa5;
   transition:
@@ -61,7 +61,7 @@ nav a.active {
 }
 .home-text h2 {
   flex: 1;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: normal;
   text-transform: uppercase;
   color: #5891c9;
@@ -69,12 +69,12 @@ nav a.active {
 }
 .home-text h3 {
   flex: 1;
-  font-size: 45px;
+  font-size: 35px;
   color: #185fa5;
 }
 .home-text p {
   flex: 1;
-  font-size: 35px;
+  font-size: 25px;
 }
 .home-buttons {
   display: flex;
@@ -86,7 +86,7 @@ nav a.active {
   color: #fff;
   border: 6px solid #185fa5;
   padding: 12px 28px;
-  font-size: 14px;
+  font-size: 10px;
   width: fit-content;
   white-space: nowrap;
   text-decoration: none;
@@ -263,18 +263,6 @@ tbody td {
   font-weight: bold;
   font-size: 20px;
 }
-@media (max-width: 500px) {
-  nav a {
-    padding: 14px 16px;
-  }
-  main {
-    padding: 24px 12px;
-  }
-  thead th,
-  tbody td {
-    padding: 12px 10px;
-  }
-}
 footer {
   background: #185fa5;
   color: #e6f1f8;
@@ -283,4 +271,25 @@ footer {
   font-size: 20px;
   width: 100%;
   bottom: 0;
+}
+@media (max-width: 600px) {
+  .head {
+    padding: 20px;
+  }
+
+  nav a {
+    padding: 12px 8px;
+  }
+
+  .home {
+    padding: 20px;
+  }
+
+  .Add-course-form {
+    padding: 20px;
+  }
+
+  .contact-info {
+    margin: 20px;
+  }
 }

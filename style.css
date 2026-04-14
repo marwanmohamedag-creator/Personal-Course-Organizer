@@ -272,24 +272,3 @@ footer {
   width: 100%;
   bottom: 0;
 }
-@media (max-width: 600px) {
-  .head {
-    padding: 20px;
-  }
-
-  nav a {
-    padding: 12px 8px;
-  }
-
-  .home {
-    padding: 20px;
-  }
-
-  .Add-course-form {
-    padding: 20px;
-  }
-
-  .contact-info {
-    margin: 20px;
-  }
-}

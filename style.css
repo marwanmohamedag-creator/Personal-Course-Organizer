@@ -113,20 +113,18 @@ nav a.active {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: auto;
   padding: 50px 20px;
 }
 
 .table-wrapper {
+  border: 1px solid #185fa5;
+  overflow-x: auto;
   max-width: 650px;
   width: 100%;
-  border: 1px solid #185fa5;
-  margin: 0 auto;
-  overflow-x: auto;
 }
 
 table {
-  max-width: 650px;
-  width: 100%;
   border-collapse: collapse;
   background: #fff;
 }
@@ -227,9 +225,7 @@ tbody td {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 500px;
   padding: 50px 20px;
-  width: 100%;
 }
 
 .contact-info {

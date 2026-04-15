@@ -21,14 +21,11 @@ main {
 }
 nav {
   display: flex;
-  overflow-x: auto;
-  white-space: nowrap;
   width: 100%;
   box-sizing: border-box;
-  gap: 0;
 }
 nav a {
-  flex: 1 1 auto;
+  flex: 1;
   text-align: center;
   padding: 25px 0;
   background-color: #e6f1f8;
@@ -53,7 +50,7 @@ nav a.active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 80px;
+  padding: 60px 20px;
   background-color: #e6f1f8;
   gap: 40px;
 }
@@ -104,7 +101,6 @@ nav a.active {
 .Add-course-header {
   width: 100%;
   background-color: #185fa5;
-  padding: 16px;
 }
 .my-courses-header h1,
 .contact-us-header h1,
@@ -113,48 +109,51 @@ nav a.active {
   color: #e6f1f8;
   font-size: 20px;
 }
-.table-wrapper {
+.my-courses-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px;
+  padding: 50px 20px;
+}
+
+.table-wrapper {
+  max-width: 100%;
   width: 100%;
+  border: 1px solid #185fa5;
+  margin: 0 auto;
   overflow-x: auto;
-  border-radius: 8px;
-  box-sizing: border-box;
 }
 
 table {
+  max-width: 100%;
   width: 100%;
-  max-width: 600px;
-  min-width: 0;
   border-collapse: collapse;
   background: #fff;
-  border-radius: 16px;
-  margin: 0 auto;
-  overflow: hidden;
 }
+
 thead tr {
-  flex: 1;
   background-color: #185fa5;
   color: #e6f1f8;
 }
+
 thead th {
   font-family: "Orbitron", sans-serif;
   font-size: 15px;
   font-weight: 700;
   color: #fff;
   padding: 18px 20px;
-  text-align: center;
   border: 1px solid #185fa5;
 }
+
 tbody tr {
   border-bottom: 1px solid #164461;
   transition: background 0.15s;
 }
+
 tbody tr:hover {
   background: #eef6fd;
 }
+
 tbody td {
   font-size: 15px;
   font-weight: 800;
@@ -164,7 +163,6 @@ tbody td {
   border-right: 1px solid #d0e8f7;
   vertical-align: middle;
 }
-
 .Add-course-section {
   display: flex;
   align-items: center;
@@ -227,35 +225,45 @@ tbody td {
 }
 .contact-section {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 20px 20px;
-  min-height: auto;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
   width: 100%;
 }
+
 .contact-info {
-  flex: 1;
-  background: #abd6fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
   border-radius: 16px;
-  padding: 32px 32px;
+  padding: 40px;
   max-width: 500px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #185fa5;
   color: #195086;
   font-size: 15px;
 }
+
 .contact-section p {
   font-weight: normal;
   font-size: 20px;
 }
+
 .contact-email,
 .contact-phone {
   background: #185fa5;
   color: #ffffff;
   border-radius: 16px;
-  padding: 10px 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  max-width: 470px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
 }
+
 .contact-email p,
 .contact-phone p {
   font-weight: bold;
@@ -271,15 +279,23 @@ footer {
   bottom: 0;
 }
 @media (max-width: 768px) {
-  .head {
-    padding: 30px 10px;
+  nav {
+    flex-direction: column; /* stack links vertically */
   }
-  body {
+  nav a {
+    font-size: 12px;
+    padding: 15px 0;
+  }
+}
+@media (max-width: 768px) {
+  .table-wrapper {
+    overflow-x: auto; /* horizontal scroll if needed */
+  }
+  table {
     font-size: 14px;
   }
-  .home {
-    flex-direction: column;
-    padding: 20px;
-    text-align: center;
+  thead th,
+  tbody td {
+    padding: 10px;
   }
 }

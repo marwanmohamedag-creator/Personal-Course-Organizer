@@ -117,7 +117,7 @@ nav a.active {
 }
 
 .table-wrapper {
-  max-width: 100%;
+  max-width: 650px;
   width: 100%;
   border: 1px solid #185fa5;
   margin: 0 auto;
@@ -125,7 +125,7 @@ nav a.active {
 }
 
 table {
-  max-width: 100%;
+  max-width: 650px;
   width: 100%;
   border-collapse: collapse;
   background: #fff;
@@ -297,5 +297,12 @@ footer {
   thead th,
   tbody td {
     padding: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .contact-section,
+  .Add-course-section,
+  .my-courses-section {
+    min-height: auto; /* don’t force full height */
   }
 }

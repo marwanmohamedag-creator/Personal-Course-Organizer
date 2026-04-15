@@ -8,7 +8,6 @@ body {
   letter-spacing: 2px;
   font-weight: bold;
   min-height: 100vh;
-  height: 100%;
   margin: 0;
 }
 main {
@@ -29,8 +28,7 @@ nav {
   gap: 0;
 }
 nav a {
-  flex: 1;
-  flex-shrink: 0;
+  flex: 1 1 auto;
   text-align: center;
   padding: 25px 0;
   background-color: #e6f1f8;
@@ -119,7 +117,6 @@ nav a.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
   padding: 40px 20px;
   width: 100%;
   overflow-x: auto;
@@ -128,7 +125,8 @@ nav a.active {
 }
 
 table {
-  width: 40%;
+  width: 100%;
+  max-width: 600px;
   min-width: 0;
   border-collapse: collapse;
   background: #fff;
@@ -171,7 +169,7 @@ tbody td {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 70vh;
+  min-height: auto;
   padding: 50px 20px;
 }
 .Add-course-form {
@@ -232,7 +230,7 @@ tbody td {
   align-items: center;
   justify-content: center;
   padding: 20px 20px;
-  min-height: 90vh;
+  min-height: auto;
   width: 100%;
 }
 .contact-info {
@@ -271,4 +269,17 @@ footer {
   font-size: 20px;
   width: 100%;
   bottom: 0;
+}
+@media (max-width: 768px) {
+  .head {
+    padding: 30px 10px;
+  }
+  body {
+    font-size: 14px;
+  }
+  .home {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
 }

@@ -233,25 +233,26 @@ tbody td {
   justify-content: center;
   background: #fff;
   border-radius: 16px;
-  padding: 40px;
+  padding: 20px 20px;
   max-width: 500px;
-  width: 100%;
+  width: 60%;
   box-sizing: border-box;
   border: 1px solid #185fa5;
   color: #195086;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .contact-section p {
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
+  overflow-wrap: break-word;
 }
 
 .contact-email,
 .contact-phone {
   background: #fff;
-  border: 2px solid #0a3560;
-  color: #0a3560;
+  border: 1px solid #164d84;
+  color: #184e83;
   border-radius: 16px;
   padding: 10px;
   margin-bottom: 10px;
@@ -262,7 +263,12 @@ tbody td {
 .contact-email h3,
 .contact-phone h3 {
   font-weight: bold;
+  font-size: 15px;
+}
+.contact-email p,
+.contact-phone p {
   font-size: 20px;
+  font-weight: 700;
 }
 footer {
   background: #185fa5;
@@ -300,6 +306,9 @@ footer {
   body {
     font-size: 16px;
     letter-spacing: 1px;
+  }
+  .contact-info {
+    width: 90%;
   }
   .contact-section p {
     overflow-wrap: break-word;
